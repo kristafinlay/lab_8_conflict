@@ -16,9 +16,9 @@ library(tidyverse)
 ggplot(data = storms, aes(x = pressure, y = wind)) +
 	geom_hex()+
   scale_fill_gradient(low = "blue", high = "yellow") +
-  theme_void()+
-  labs(title = "My Storm")
-
+  theme_bw() +
+  labs(x = "Pressure (mb)",
+       y = "Wind (mph)")
 
 ```
 
